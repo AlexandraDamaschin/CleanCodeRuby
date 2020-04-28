@@ -22,21 +22,21 @@ def self.createPluralDependentMessageParts(count)
 end
 
 def self.thereAreManyLetters(count)
-$number = count.to_s;
-$verb = "are";
-$pluralModifier = "s";
+    $number = count.to_s;
+    $verb = "are";
+    $pluralModifier = "s";
 end
 
 def self.thereIsOneLetter()
-$number = "1";
-$verb = "is";
-$pluralModifier = "";
+    $number = "1";
+    $verb = "is";
+    $pluralModifier = "";
 end
 
 def self.thereAreNoLetters()
-$number = "no";
-$verb = "are";
-$pluralModifier = "s";
+    $number = "no";
+    $verb = "are";
+    $pluralModifier = "s";
 end
 
-end
+endGuessStatisticsMessage
