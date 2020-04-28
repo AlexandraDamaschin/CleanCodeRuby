@@ -6,19 +6,19 @@ $number = '';
 $verb = '';
 $pluralModifier = '';
 
-def self.make(candidate, count)
+def self.make(inputedCharacter, count)
 createPluralDependentMessageParts(count);
-puts "There #{$verb} #{$number} #{candidate} #{$pluralModifier}"
+puts "There #{$verb} #{$number} #{inputedCharacter} #{$pluralModifier}"
 end
 
 def self.createPluralDependentMessageParts(count)
-if count == 0
-    thereAreNoLetters();
-elsif count == 1
-    thereIsOneLetter();
-else
-    thereAreManyLetters(count);
-end
+    if count == 0
+        thereAreNoLetters();
+    elsif count == 1
+        thereIsOneLetter();
+    else
+        thereAreManyLetters(count);
+    end
 end
 
 def self.thereAreManyLetters(count)
