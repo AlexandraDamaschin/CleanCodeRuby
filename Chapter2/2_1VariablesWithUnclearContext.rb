@@ -1,8 +1,15 @@
-def test
-   i = 100
-   j = 200
-   k = 300
-return i, j, k
+verb = '';
+pluralModifier = '';
+count = 4
+if count == 0
+    verb = 'are';
+    pluralModifier = 's';
+elsif count == 1
+    verb = 'is';
+    pluralModifier = '';
+else 
+    verb = 'are';
+    pluralModifier = 's';
 end
-var = test
-puts var
+guessMessage = "There #{verb} #{count} #{pluralModifier}"
+puts guessMessage;
